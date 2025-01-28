@@ -1,0 +1,102 @@
+/* Color Variables */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f4, #a2d5a2);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* FAQ Container */
+  .faq-container {
+    max-width: 650px;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .faq-container:hover {
+    transform: scale(1.02);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #4caf50;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* FAQ Item */
+  .faq-item {
+    margin-bottom: 1rem;
+  }
+  
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    background: linear-gradient(120deg, #4caf50, #ff9800);
+    color: #fff;
+    border: none;
+    padding: 0.9rem 1.2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .faq-question:after {
+    content: "▼";
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background: linear-gradient(120deg, #3e8e41, #e68900);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .faq-question:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #dff0d8;
+  }
+  
+  .faq-question.active:after {
+    transform: rotate(180deg);
+  }
+  
+  /* FAQ Answer */
+  .faq-answer {
+    display: none;
+    padding: 1rem;
+    border-left: 4px solid #4caf50;
+    background: #d9f5d9;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #222;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .faq-answer.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
