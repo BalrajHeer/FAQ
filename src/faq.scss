@@ -1,0 +1,39 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Helvetica Neue', Helvetica, sans-serif;
+
+body {
+    font-family: $font-stack;
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    background: $primary-color;
+    color: #fff;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.faq-answer {
+    display: none;
+    background: $secondary-color;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
